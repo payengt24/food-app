@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="vendors/angular.min.js"></script>
+    <script src="scripts/client.js"></script>
+
+    <title>Angular Full Stack</title>
+</head>
+<body ng-app="FoodApp" ng-controller="FoodController as vm">
+
+    <h1>Angular Full Stack Food App</h1>
+
+    <div > 
+        <form action="">
+            <input type="text" name= "foodName" placeholder= "Food Name" ng-model="vm.newFood.name">
+            <input type="number" placeholder= "Rating" ng-model="vm.newFood.deliciousness_rating">
+            <input type="text"  placeholder="Is it hot? Yes or No" ng-model="vm.newFood.is_hot">
+            <button ng-click= "vm.createNewFood(vm.newFood)" >Submit</button>
+    
+
+        </form>    
+           
+            
+    </div>
+    
+</body>
+</html>
